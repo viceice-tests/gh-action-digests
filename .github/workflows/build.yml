@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@af513c7a016048ae468971c52ed77d9562c7c819 # renovate: tag=v1.0.0
+      - uses: actions/checkout@50fbc622fc4ef5163becd7fab6573eac35f8462e # renovate: tag=v1.2.0
       
       - uses: docker/setup-qemu-action@c308fdd69d26ed66f4506ebd74b180abe5362145
       
