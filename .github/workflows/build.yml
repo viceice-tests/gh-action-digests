@@ -8,5 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@af513c7a016048ae468971c52ed77d9562c7c819 # renovate: tag=v1.0.0
+      
       - uses: docker/setup-qemu-action@c308fdd69d26ed66f4506ebd74b180abe5362145
+      
       - uses: docker/setup-buildx-action@v1.4.0
+      
+      # sha is from https://github.com/actions/setup-node/releases/tag/v2.1.4 and should be updated to current of https://github.com/actions/setup-node/releases/tag/v2
+      - uses: actions/setup-node@c46424eee26de4078d34105d3de3cc4992202b1e # renovate tag=v2
+        with:
+          node-version: '14'
