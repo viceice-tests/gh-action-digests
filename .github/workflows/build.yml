@@ -1,0 +1,10 @@
+name: build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@1.0.0
+      - uses: docker/setup-qemu-action@c308fdd69d26ed66f4506ebd74b180abe5362145
